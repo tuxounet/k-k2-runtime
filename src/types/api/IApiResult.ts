@@ -1,5 +1,3 @@
-export interface IApiResult {
-  status: number;
-  message?: string;
-  body: unknown;
-}
+import { APIGatewayProxyResult } from "aws-lambda";
+
+export interface IApiResult extends APIGatewayProxyResult {}
